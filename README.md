@@ -8,6 +8,8 @@ Medina Andrea Lourdes 28240
 
 Villacorta Gonzalo 28146
 
+Veppo Adrian 28247
+
 ---
 
 Este es un proyecto desarrollado con Laravel. A continuación, encontrarás las instrucciones sobre cómo clonar, configurar y ejecutar el proyecto en tu máquina local.
