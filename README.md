@@ -30,14 +30,24 @@ Para clonar este repositorio, sigue estos pasos:
   ## ⚙️ 2. Configuración Después de Clonar el Repositorio
 Una vez que el repositorio esté clonado en tu máquina local, sigue estos pasos para configurarlo correctamente.
 
-## 📝 2.1 Crear el Archivo .env
+## 📝 2.1 Instalar Dependencias
+Antes de continuar, instala las dependencias necesarias para el proyecto ejecutando el siguiente comando:
+
+
+   ```bash
+composer install
+
+   ```
+Este comando instalará todas las dependencias de Laravel y cualquier paquete adicional definido en el archivo composer.json.
+
+## 📝 2.2 Crear el Archivo .env
 El archivo .env contiene la configuración de tu entorno. Laravel incluye un archivo de ejemplo llamado .env.example. Deberás copiar este archivo y renombrarlo como .env:
 
 ```bash
 cp .env.example .env
 ```
 
-## 🔧 2.2 Modificar el Nombre de la Base de Datos
+## 🔧 2.3 Modificar el Nombre de la Base de Datos
 Abre el archivo .env con tu editor de texto favorito.
 
 Busca las siguientes líneas en el archivo ".env":
@@ -63,7 +73,7 @@ DB_DATABASE=mi_base_de_datos
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-## 🔑 2.3 Generar la Key de Laravel
+## 🔑 2.4 Generar la Key de Laravel
 Laravel requiere una clave para el proyecto. Para generarla, ejecuta el siguiente comando en la terminal:
 
 ```
@@ -71,7 +81,7 @@ php artisan key:generate
 ```
 Este comando generará una nueva clave y la almacenará en el archivo .env.
 
-## 🏗️ 2.4 Ejecutar las Migraciones
+## 🏗️ 2.5 Ejecutar las Migraciones
 Para crear las tablas en la base de datos, ejecuta las migraciones con el siguiente comando:
 
 
